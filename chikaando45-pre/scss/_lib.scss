@@ -1,0 +1,70 @@
+//////////////////
+//     変数     //
+//////////////////
+$beige : #A193861F;
+$brown : #A1938689;
+$gray : #707070;
+$font-R : Roboto Mono for Powerline;
+$font-H : Hiragino Mincho Pro;
+
+//////////////////
+// レスポンシブ  //
+//////////////////
+@mixin pc {
+    @media (min-width:960px){
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width:959px){
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width:670px) {
+        @content;
+    }
+}
+
+@mixin responsive {
+
+}
+
+//////////////////
+//     共通     //
+//////////////////
+html {
+    font-size: 62.5%;
+}
+
+
+.inner {
+    margin:0 8.5%;
+    //inner width 1068px
+    @include sp {
+        margin: 0 5.5%;
+    }
+}
+
+h3 {
+    padding-top: 32.5vh ;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: Roboto;
+    color: $gray;
+    margin-bottom: 11px;
+    &::after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid;
+        width: 4em;
+        margin-left: 2.25rem;
+    }
+    @include sp {
+        padding-top: 9vh;
+        margin-bottom: 7.5vh;
+    }
+}

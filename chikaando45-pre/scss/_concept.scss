@@ -1,0 +1,62 @@
+.concept {
+    background: linear-gradient($beige 0 50%, $brown 50% 100%); 
+    @include sp {
+    background: linear-gradient($beige 0 25%, $brown 25% 100%); 
+    }
+}
+
+.concept-img {
+    display: flex;
+    & :first-child {
+        margin-right: 11px;
+        width: 63%;
+        @include sp {
+            margin-right: 7px;
+            width: 49%;
+            object-fit: cover;
+        }
+    }
+    & :not(:first-child) {
+        width: 36.5%;
+        @include sp {
+            width: 49%;
+        }
+    } 
+}
+
+.concept-item {
+    padding: 8vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    & h2 {
+        font-size: 4.0rem;
+        font-family: $font-H;
+        margin-right: 57px;
+        @include sp {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        @include tab {
+            margin: 0;
+        }
+    }
+    & p {
+        line-height: 2em;
+        width: 40%;
+        font-size: 1.6rem;
+        font-family: Hiragimo Kaku Gothic Pro, W3;
+        @include sp {
+            width: 100%;
+            font-size: 1.6rem;
+            margin-top: 18px;
+        }
+    }
+    @include sp {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+}

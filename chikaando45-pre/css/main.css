@@ -1,0 +1,544 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+html {
+  font-size: 62.5%;
+}
+
+.inner {
+  margin: 0 8.5%;
+}
+@media (max-width: 670px) {
+  .inner {
+    margin: 0 5.5%;
+  }
+}
+
+h3 {
+  padding-top: 32.5vh;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: Roboto;
+  color: #707070;
+  margin-bottom: 11px;
+}
+h3::after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid;
+  width: 4em;
+  margin-left: 2.25rem;
+}
+@media (max-width: 670px) {
+  h3 {
+    padding-top: 9vh;
+    margin-bottom: 7.5vh;
+  }
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  left: 6%;
+}
+@media (max-width: 670px) {
+  header {
+    position: static;
+    justify-content: space-between;
+    padding: 24px 20px;
+  }
+}
+
+.h-logo {
+  font-size: 3.8rem;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 670px) {
+  .h-logo {
+    font-size: 2.2rem;
+  }
+}
+
+.ham {
+  display: none;
+}
+@media (max-width: 670px) {
+  .ham {
+    width: 16px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    background-color: #3B4043;
+    width: 100%;
+    height: 2px;
+  }
+  .ham :last-child {
+    width: 75%;
+  }
+}
+
+nav {
+  width: 381px;
+  margin-left: 20px;
+}
+nav ul {
+  letter-spacing: 0.1em;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li:first-child {
+  border-bottom: 1px solid;
+  width: 2.7em;
+}
+nav ul li:not(:first-child) {
+  color: #707070;
+}
+@media (max-width: 670px) {
+  nav {
+    display: none;
+  }
+}
+
+.first-view {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+@media (max-width: 959px) {
+  .first-view {
+    background-size: cover;
+    background-position: left;
+  }
+}
+
+.catch {
+  height: 27vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  position: relative;
+  top: 50vh;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+.catch h2 {
+  font-size: 3.8rem;
+  font-family: Hiragino Mincho Pro;
+}
+.catch p {
+  font-size: 3.8rem;
+  font-family: Zapfino;
+}
+@media (max-width: 959px) {
+  .catch {
+    color: white;
+    flex-direction: column-reverse;
+    left: 50%;
+    height: 17.5vh;
+    text-shadow: 0 3px 16px #000000;
+  }
+  .catch h2 {
+    font-size: 2.8rem;
+  }
+  .catch P {
+    font-size: 2.3rem;
+  }
+}
+
+.first-wrap img {
+  display: inline-block;
+  height: 100vh;
+}
+
+.concept {
+  background: linear-gradient(#A193861F 0 50%, #A1938689 50% 100%);
+}
+@media (max-width: 670px) {
+  .concept {
+    background: linear-gradient(#A193861F 0 25%, #A1938689 25% 100%);
+  }
+}
+
+.concept-img {
+  display: flex;
+}
+.concept-img :first-child {
+  margin-right: 11px;
+  width: 63%;
+}
+@media (max-width: 670px) {
+  .concept-img :first-child {
+    margin-right: 7px;
+    width: 49%;
+    object-fit: cover;
+  }
+}
+.concept-img :not(:first-child) {
+  width: 36.5%;
+}
+@media (max-width: 670px) {
+  .concept-img :not(:first-child) {
+    width: 49%;
+  }
+}
+
+.concept-item {
+  padding: 8vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.concept-item h2 {
+  font-size: 4.0rem;
+  font-family: Hiragino Mincho Pro;
+  margin-right: 57px;
+}
+@media (max-width: 670px) {
+  .concept-item h2 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+}
+@media (max-width: 959px) {
+  .concept-item h2 {
+    margin: 0;
+  }
+}
+.concept-item p {
+  line-height: 2em;
+  width: 40%;
+  font-size: 1.6rem;
+  font-family: Hiragimo Kaku Gothic Pro, W3;
+}
+@media (max-width: 670px) {
+  .concept-item p {
+    width: 100%;
+    font-size: 1.6rem;
+    margin-top: 18px;
+  }
+}
+@media (max-width: 670px) {
+  .concept-item {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.menu-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 670px) {
+  .menu-wrap {
+    flex-direction: column;
+  }
+}
+
+.menu-item {
+  width: 25%;
+}
+@media (max-width: 670px) {
+  .menu-item {
+    width: 100%;
+  }
+}
+.menu-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.5s linear;
+}
+
+.kadai3:hover {
+  transform: rotate(10deg) scale(1.2);
+}
+
+.mi-wrap {
+  font-family: Roboto Mono for Powerline;
+  margin: 37px 4% 0 4%;
+}
+@media (max-width: 670px) {
+  .mi-wrap {
+    margin: 4.5vh 0 9.5vh 4%;
+  }
+}
+.mi-wrap h4 {
+  font-size: 3.0rem;
+  font-family: Roboto Mono for Powerline;
+  text-align: center;
+  min-width: 185px;
+}
+@media (max-width: 959px) {
+  .mi-wrap h4 {
+    text-align: left;
+  }
+}
+.mi-wrap .mi_text {
+  margin: 34px 0;
+  font-size: 1.6rem;
+  width: 92%;
+}
+@media (max-width: 670px) {
+  .mi-wrap .mi_text {
+    margin: 7% 0 4vh;
+  }
+}
+@media (max-width: 959px) {
+  .mi-wrap .mi_text {
+    margin: 7% auto;
+    width: 100%;
+  }
+}
+.mi-wrap .mi_price {
+  font-size: 1.6rem;
+  text-align: right;
+}
+
+.access {
+  margin-top: 9vh;
+  height: 94vh;
+  background-color: #A193861F;
+}
+@media (max-width: 670px) {
+  .access {
+    margin: 0;
+    height: 100vh;
+  }
+}
+
+.access-view h3 {
+  margin-left: 8.5%;
+}
+
+.access-wrap {
+  height: 49vh;
+  display: flex;
+}
+@media (max-width: 670px) {
+  .access-wrap {
+    width: 100%;
+    height: 77vh;
+    flex-direction: column-reverse;
+  }
+}
+
+.access-item {
+  padding: 12.5vh 0 0 8.4%;
+  width: 39.5%;
+  background-color: #D0C5BA;
+}
+@media (max-width: 670px) {
+  .access-item {
+    width: 100%;
+    height: 42vh;
+    padding: 4.5vh 0 0 5%;
+  }
+}
+.access-item .place {
+  color: #00000038;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.access-item .dic {
+  color: white;
+  font-size: 1.6rem;
+  line-height: 2.3em;
+  margin-top: 7.5%;
+}
+
+.access-map {
+  width: 60.5%;
+}
+@media (max-width: 670px) {
+  .access-map {
+    width: 100%;
+    height: 35vh;
+  }
+}
+
+footer .inner {
+  height: 39vh;
+}
+
+.footer-view {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #7070704D;
+  margin: 20.5vh 0 7.5vh 0;
+  padding-top: 20.5vh;
+}
+@media (max-width: 670px) {
+  .footer-view {
+    margin: 9vh 0 3vh 0;
+    height: 30vh;
+    padding-top: 9vh;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 670px) {
+  .footer-item {
+    width: 100%;
+  }
+}
+.footer-item h5 {
+  font-size: 3.2rem;
+  color: #7070704D;
+  font-family: Roboto Mono for Powerline;
+}
+@media (max-width: 670px) {
+  .footer-item h5 {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+}
+.footer-item .btn {
+  display: flex;
+  color: black;
+  font-size: 2em;
+}
+.footer-item .btn .fa-twitter {
+  margin-left: 26px;
+}
+@media (max-width: 670px) {
+  .footer-item .btn .fa-twitter {
+    margin: 0;
+  }
+}
+.footer-item .btn .fa-facebook-square {
+  margin-left: 9px;
+}
+
+footer button {
+  width: 184px;
+  font-size: 1.8rem;
+  color: #707070;
+  font-family: Roboto Mono for Powerline;
+  padding: 0.5em 2.4em;
+  background-color: white;
+  border: 1px solid;
+}
+
+/*# sourceMappingURL=main.css.map */

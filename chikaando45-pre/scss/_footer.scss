@@ -1,0 +1,60 @@
+footer .inner {
+    height: 39vh;
+}
+.footer-view {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #7070704D;
+    margin: 20.5vh 0 7.5vh 0;
+    padding-top: 20.5vh;
+    @include sp {
+        margin: 9vh 0 3vh 0;
+        height: 30vh;
+        padding-top: 9vh;
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.footer-item {
+    display: flex;
+    align-items: center;
+    @include sp {
+        width: 100%;
+    }
+    & h5 {
+        font-size: 3.2rem;
+        color: #7070704D;
+        font-family: $font-R;
+        @include sp {
+            font-size: 1.8rem;
+            width: 100%;
+        }
+    }
+    & .btn {
+        display: flex;
+        color: black;
+        font-size: 2em;
+        & .fa-twitter {
+            margin-left: 26px;
+            @include sp {
+                margin: 0;
+            }
+        }
+        & .fa-facebook-square {
+            margin-left: 9px;
+        }
+    }
+}
+footer button {
+    width: 184px;
+    font-size: 1.8rem;
+    color: $gray;
+    font-family: $font-R;
+    padding: 0.5em 2.4em;
+    background-color: white;
+    border: 1px solid;
+    }
+

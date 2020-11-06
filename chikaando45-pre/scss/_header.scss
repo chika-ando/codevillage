@@ -1,0 +1,61 @@
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    @include sp {
+        position: static;
+        justify-content: space-between;
+        padding: 24px 20px;
+    }
+}
+.h-logo {
+    font-size: 3.8rem;
+    letter-spacing: 0.1em;
+    @include sp {
+        font-size: 2.2rem;
+    }
+}
+.ham {
+    display: none;
+    @include sp {
+        width: 16px;
+        height: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & span {
+            display: inline-block;
+            background-color: #3B4043;
+            width: 100%;
+            height: 2px;
+        }
+        & :last-child {
+            width: 75%;
+        }
+    }
+}
+nav {
+    width: 381px;
+    margin-left: 20px;
+    ul {
+        letter-spacing: 0.1em;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-between;
+        li {
+            &:first-child{
+                border-bottom: 1px solid;
+                width: 2.7em;
+            }
+            &:not(:first-child) {
+                color: $gray;
+            }
+        }
+    }
+    @include sp {
+        display: none;
+    }
+}

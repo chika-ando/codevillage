@@ -1,0 +1,49 @@
+/*  課題1 */
+ul {
+  list-style: none;
+}
+
+.kadai1 {
+  display: inline-block;
+  color: gray;
+  text-decoration: none;
+  position: relative;
+}
+
+.kadai1::after {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  background-color: black;
+  content: "";
+  width: 3em;
+  height: 2px;
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform .5s;
+}
+
+.kadai1:hover::after {
+  transform: scale(1, 1);
+}
+.kadai1:hover {
+  color: black;
+}
+
+/* 課題2 */
+
+.kadai2 {
+  display: inline-block;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to bottom, black, transparent);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 5px 0 black;
+}
+
+.kadai2:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
