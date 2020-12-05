@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>課題</title>
+</head>
+<body>
+    <div class="selectBtn">
+        <p>プログラミングは楽しいですか？</p>
+        <input id="yes" type="radio" name="btn" value="よかった！">はい
+        <input id="no" type="radio" name="btn" value="え～～">いいえ
+        <!-- DOMでここにul,liが挿入される -->
+    </div>
+    <div class="like_chara">
+        <label for="characters">好きな鬼滅キャラ:
+            <select id="characters">
+                <option id="selectDb">1つ選択してください...</option>
+                <option id="tanjiro" value="炭治郎">炭治郎</option>
+                <option id="zenitsu" value="善逸">善逸</option>
+                <option id="nezuko" value="禰豆子">禰豆子</option>
+            </select>
+        </label>
+        <!-- DOMでここにp,img,pを挿入 -->
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>

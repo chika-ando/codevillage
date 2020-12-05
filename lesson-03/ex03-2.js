@@ -1,0 +1,1 @@
+console.log('I\'m learnig JavaScript.\n\nJavaScript says "Hello, World"');
